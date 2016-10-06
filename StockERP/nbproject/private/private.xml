@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/comp2/Documents/StockERP/src/com/aviara/stock/view/Login.fxml</file>
+            <file>file:/C:/Users/comp2/Documents/StockERP/src/com/aviara/stock/controller/DashboardController.java</file>
+            <file>file:/C:/Users/comp2/Documents/StockERP/src/com/aviara/stock/view/Supplier.fxml</file>
+            <file>file:/C:/Users/comp2/Documents/StockERP/src/stockerp/StockERP.java</file>
+            <file>file:/C:/Users/comp2/Documents/StockERP/src/com/aviara/stock/css/style.css</file>
+            <file>file:/C:/Users/comp2/Documents/StockERP/src/com/aviara/stock/configuration/hibernate.cfg.xml</file>
+            <file>file:/C:/Users/comp2/Documents/StockERP/src/com/aviara/stock/view/Dashboard.fxml</file>
+            <file>file:/C:/Users/comp2/Documents/StockERP/src/com/aviara/stock/view/AddProduct.fxml</file>
+            <file>file:/C:/Users/comp2/Documents/StockERP/src/com/aviara/stock/controller/ItemController.java</file>
+            <file>file:/C:/Users/comp2/Documents/StockERP/src/com/aviara/stock/view/Item.fxml</file>
+            <file>file:/C:/Users/comp2/Documents/StockERP/src/com/aviara/stock/controller/AddProductController.java</file>
+            <file>file:/C:/Users/comp2/Documents/StockERP/src/com/aviara/stock/controller/SupplierController.java</file>
+            <file>file:/C:/Users/comp2/Documents/StockERP/src/com/aviara/stock/images/home1.png</file>
+            <file>file:/C:/Users/comp2/Documents/StockERP/src/com/aviara/stock/controller/Modal.java</file>
+            <file>file:/C:/Users/comp2/Documents/StockERP/src/com/aviara/stock/controller/LoginController.java</file>
+            <file>file:/C:/Users/comp2/Documents/StockERP/src/com/aviara/stock/controller/PO_formController.java</file>
+            <file>file:/C:/Users/comp2/Documents/StockERP/src/com/aviara/stock/bean/Supplier.java</file>
+            <file>file:/C:/Users/comp2/Documents/StockERP/src/com/aviara/stock/controller/Query.java</file>
+        </group>
+    </open-files>
+</project-private>

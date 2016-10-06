@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="PO_form" onMouseClicked="#handleFocusLost" prefHeight="529.0" prefWidth="733.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aviara.stock.controller.PO_formController">
+   <children>
+      <Pane prefHeight="624.0" prefWidth="1173.0">
+         <children>
+            <Pane prefHeight="42.0" prefWidth="935.0">
+               <children>
+                  <Label id="title_lbl" layoutX="14.0" layoutY="1.0" prefHeight="38.0" prefWidth="129.0" text="Purchase Order" />
+               </children>
+            </Pane>
+            <Pane id="form_pane" layoutX="9.0" layoutY="42.0" prefHeight="564.0" prefWidth="907.0">
+               <children>
+                  <Pane id="inside_pane" layoutX="10.0" layoutY="18.0" prefHeight="251.0" prefWidth="887.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="1.0" text="Item List" />
+                        <TableView layoutX="14.0" layoutY="48.0" prefHeight="189.0" prefWidth="864.0">
+                          <columns>
+                            <TableColumn prefWidth="63.0" text="Sr No" />
+                            <TableColumn prefWidth="221.0" text="Particulars" />
+                              <TableColumn prefWidth="83.0" text="Quantity" />
+                              <TableColumn prefWidth="115.0" text="Free Quantity" />
+                              <TableColumn prefWidth="84.0" text="Rate" />
+                              <TableColumn prefWidth="90.0" text="VAT" />
+                              <TableColumn prefWidth="118.0" text="Discount" />
+                              <TableColumn prefWidth="89.0" text="Action" />
+                          </columns>
+                        </TableView>
+                        <Button id="add_btn" layoutX="766.0" layoutY="6.0" mnemonicParsing="false" onAction="#openItem" prefHeight="25.0" prefWidth="107.0" text="Add Item" />
+                        <Button id="add_btn" layoutX="588.0" layoutY="6.0" mnemonicParsing="false" onAction="#openInventoryItem" prefHeight="18.0" prefWidth="173.0" text="Add Inventory Item" />
+                     </children>
+                  </Pane>
+                  <Pane id="inside_pane" layoutX="14.0" layoutY="269.0" prefHeight="58.0" prefWidth="887.0">
+                     <children>
+                        <Label layoutX="600.0" layoutY="8.0" text="Sub Total" />
+                        <TextField layoutX="676.0" layoutY="8.0" />
+                        <Label layoutX="845.0" layoutY="8.0" prefHeight="30.0" prefWidth="38.0" text="Rs" />
+                     </children>
+                  </Pane>
+                  <Pane id="inside_pane" layoutX="14.0" layoutY="327.0" prefHeight="85.0" prefWidth="887.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="3.0" text="Discount %" />
+                        <TextField layoutX="15.0" layoutY="43.0" prefHeight="30.0" prefWidth="86.0" />
+                        <Label layoutX="146.0" layoutY="4.0" text="Discount In Rupees" />
+                        <TextField layoutX="146.0" layoutY="43.0" prefHeight="30.0" prefWidth="133.0" />
+                        <Label layoutX="317.0" layoutY="4.0" text="Excise Duty %" />
+                        <TextField layoutX="320.0" layoutY="42.0" prefHeight="30.0" prefWidth="101.0" />
+                        <Label layoutX="473.0" layoutY="4.0" prefHeight="30.0" prefWidth="101.0" text="P&amp;F %" />
+                        <TextField layoutX="458.0" layoutY="42.0" prefHeight="30.0" prefWidth="101.0" />
+                     </children>
+                  </Pane>
+                  <Pane id="inside_pane" layoutX="13.0" layoutY="412.0" prefHeight="85.0" prefWidth="887.0">
+                     <children>
+                        <Label layoutX="11.0" layoutY="6.0" text="Payment Days" />
+                        <TextField layoutX="12.0" layoutY="43.0" prefHeight="30.0" prefWidth="101.0" />
+                     </children>
+                  </Pane>
+                  <Button layoutX="14.0" layoutY="510.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Submit" />
+                  <Button layoutX="133.0" layoutY="510.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Reset" />
+               </children></Pane>
+            <Pane id="form_pane" layoutX="922.0" layoutY="42.0" prefHeight="564.0" prefWidth="243.0">
+               <children>
+                  <Pane id="inside_pane" layoutX="7.0" layoutY="4.0" prefHeight="172.0" prefWidth="231.0">
+                     <children>
+                        <TextField fx:id="supplier_name" layoutX="10.0" layoutY="47.0" onKeyReleased="#handleAutofill" prefHeight="31.0" prefWidth="200.0" promptText="Browse Supplier" />
+                        <Label layoutX="14.0" layoutY="6.0" text="Select Supplier" />
+                        <Button id="add_btn" layoutX="87.0" layoutY="123.0" mnemonicParsing="false" onAction="#openSupplier" prefHeight="28.0" prefWidth="123.0" text="Add Supplier" />
+                        <ListView fx:id="autofill" layoutX="10.0" layoutY="78.0" onMouseClicked="#handleClick" prefHeight="31.0" prefWidth="200.0" />
+                     </children>
+                  </Pane>
+                  <Pane id="inside_pane" layoutX="7.0" layoutY="180.0" prefHeight="251.0" prefWidth="231.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="6.0" prefHeight="30.0" prefWidth="200.0" text="Supplier Bill No" />
+                        <TextField fx:id="supplier_name1" layoutX="14.0" layoutY="39.0" onKeyReleased="#handleAutofill" prefHeight="31.0" prefWidth="200.0" promptText="Bill No" />
+                        <Label layoutX="14.0" layoutY="82.0" prefHeight="30.0" prefWidth="200.0" text="Supplier Bill Date" />
+                        <DatePicker layoutX="18.0" layoutY="120.0" prefHeight="31.0" prefWidth="200.0" promptText="Bill Date" />
+                        <Label layoutX="18.0" layoutY="162.0" prefHeight="30.0" prefWidth="200.0" text="PO Date" />
+                        <DatePicker layoutX="18.0" layoutY="202.0" prefHeight="31.0" prefWidth="200.0" promptText="PO Date" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,194 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+    
+    #login_label
+    {
+        -fx-font-family: "Open Sans"," Helvetica, Arial", "sans-serif";
+        -fx-font-size: 20px;
+        -fx-text-fill: #393c40;
+        -fx-padding: 5 10 5 10; 
+        -fx-font-weight:100;
+    }
+    #login_text
+    {
+        -fx-font-family: "Open Sans"," Helvetica, Arial", "sans-serif";
+        -fx-font-size: 15px;
+        -fx-font-weight:400;
+        -fx-background-color: #E2E6EB;
+        -fx-text-fill: black;
+        -fx-padding: 10px;
+        -fx-border-radius:3;
+        -fx-background-radius: 3;
+    }
+    #login_text:focused
+    {
+        -fx-background-color: #D3D9E1;
+        -fx-text-fill: black;
+        -fx-border-width:1;
+        -fx-border-style: solid;
+        -fx-border-color: #ccc;
+        
+    }
+    #login_button
+    {
+        -fx-border-radius:3;
+        -fx-background-radius: 3;
+        -fx-background-color: #f48042;
+        -fx-font-family : "Raleway", "Open Sans", "Helvetica, Arial", "sans-serif";
+        -fx-font-size: 14px;
+        -fx-font-weight: 700;
+        -fx-padding: 9 15 10 0;
+        -fx-text-fill: #FFFFFF;
+        -fx-border-width:1;
+        -fx-border-style: solid;
+        -fx-border-color: #d2802d;
+    }
+   #login_button:hover
+    {
+        -fx-background-color: #DB733B;
+        -fx-border-color: #BD7328;
+    }
+    #login_link
+    {
+        -fx-text-fill: #f48042;
+        -fx-font-size: 13px;
+        -fx-font-weight: 300;
+    }
+    #login_link:hover
+    {
+        -fx-text-fill: #DB733B;
+        -fx-font-weight: 400;
+    }
+    #login_link:visited
+    {
+        -fx-text-fill: #DB733B;
+        -fx-font-weight: 400;
+    }
+    #login_logo
+    {
+        -fx-background-image:  url("../images/stock11.png");
+        -fx-background-repeat: no-repeat;
+    }
+    #login_head
+    {
+        -fx-font-family: "Lato", "Open Sans", "Helvetica", "sans-serif";
+        -fx-font-weight: 800;
+        -fx-font-size: 30px;
+        -fx-text-fill: black;
+    }
+    
+    #back
+    {
+       -fx-padding: 1 1 1 1;
+    }
+    #menu_bar
+    {
+        -fx-background-color:#232B2D;
+    }
+    #home_icon
+    {
+        -fx-graphic:  url("../images/h1.png");
+    }
+    #home_icon:hover
+    {
+        -fx-graphic:  url("../images/h2.png");
+    }
+    #side_bar
+    {
+        -fx-background-color:#31373d;
+    }
+    #side_bar1:hover
+    {
+        -fx-background-color:#31373d;
+    }
+    #menu_lbl
+    {
+        -fx-font-family: -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif;
+        -fx-text-fill: #FFFFFF;
+        -fx-font-size: 12px;
+        -fx-padding: 9 10 10 10;
+    }
+    .root
+    {
+        -fx-background-color:#ffffff;
+    }
+    .scroll-pane> .viewport
+    {
+        -fx-background-color:#ffffff;
+    }
+    #menu_pane
+    {
+        -fx-height:18px;
+    }
+    #menu_pane:hover
+    {
+        -fx-background-color:#5A5E63;
+    }
+    #menu_pane:visited
+    {
+        -fx-background-color:#5A5E63;
+    }
+    #top_pane
+    {
+       -fx-background-color:#f48042; 
+    }
+    #title_lbl
+    {
+        -fx-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
+        -fx-text-fill: #f48042;
+        -fx-font-size: 15px;
+        -fx-padding: 9 10 10 10;
+        -fx-font-weight: bold;
+    }
+    #form_pane
+    {
+        -fx-background-radius: 20;
+        -fx-border-radius: 20;
+        -fx-border-color:#e3e3e3;
+    }
+    #menu_btn
+    {
+        -fx-graphic:  url("../images/menu.png");
+        -fx-padding: 2 2 2 2;   
+        -fx-border-width: 0.5;
+        -fx-background-radius: 0;
+        -fx-font-size: 10pt;
+        -fx-text-fill: #FFFFFF;
+        -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    }
+    .label
+    {
+        -fx-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        -fx-font-size: 10pt;
+        -fx-text-fill: #000000;
+        -fx-padding: 5 10 5 10;  
+    }
+    #star
+    {
+        -fx-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        -fx-font-size: 12px;
+        -fx-text-fill: red;
+        -fx-padding: 0;  
+        -fx-font-weight:bold;
+    }
+    #inside_pane
+    {
+        -fx-border-bottom: 1px;
+        -fx-border-color:  transparent transparent #e3e3e3 transparent;
+        -fx-border-style: dashed; 
+    }
+    .text-field
+    {
+        -fx-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        -fx-font-size: 10pt;
+        -fx-text-fill: #000000;
+        -fx-padding: 5 10 5 10;  
+    }
+    #add_btn
+    {
+       -fx-graphic:  url("../images/add2.png"); 
+    }
+   

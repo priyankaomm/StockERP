@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="StockERP.jnlp">
+  <information>
+    <title>StockERP</title>
+    <vendor>comp2</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="StockERP.jar" size="46171" download="eager" />
+    <jar href="lib\antlr-2.7.6.jar" size="443432" download="eager" />
+    <jar href="lib\commons-collections-3.1.jar" size="559366" download="eager" />
+    <jar href="lib\dom4j-1.6.1.jar" size="313898" download="eager" />
+    <jar href="lib\hibernate-commons-annotations-3.2.0.Final.jar" size="71283" download="eager" />
+    <jar href="lib\hibernate-core-3.6.7.Final.jar" size="3113971" download="eager" />
+    <jar href="lib\hibernate-jpa-2.0-api-1.0.1.Final.jar" size="102661" download="eager" />
+    <jar href="lib\javassist.jar" size="471005" download="eager" />
+    <jar href="lib\jms-1.1.jar" size="26257" download="eager" />
+    <jar href="lib\jsr250-api-1.0.jar" size="5848" download="eager" />
+    <jar href="lib\jta-1.1.jar" size="15071" download="eager" />
+    <jar href="lib\log4j-1.2.16.jar" size="481535" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.7-bin.jar" size="709922" download="eager" />
+    <jar href="lib\ojdbc14.jar" size="1536797" download="eager" />
+    <jar href="lib\rs2xml.jar" size="171578" download="eager" />
+    <jar href="lib\slf4j-api-1.6.1.jar" size="25496" download="eager" />
+    <jar href="lib\slf4j-log4j12-1.6.1.jar" size="9753" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="StockERP" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="stockerp.StockERP"  name="StockERP" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="525.0" prefWidth="527.0" stylesheets="@../css/style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.aviara.stock.controller.SupplierController">
+   <children>
+      <Pane prefHeight="524.0" prefWidth="527.0">
+         <children>
+            <Pane prefHeight="42.0" prefWidth="527.0">
+               <children>
+                  <Label id="title_lbl" layoutX="14.0" layoutY="1.0" prefHeight="40.0" prefWidth="192.0" text="Create New Supplier" />
+               </children>
+            </Pane>
+            <Pane layoutY="42.0" prefHeight="446.0" prefWidth="508.0">
+               <children>
+                  <ScrollPane layoutX="10.0" prefHeight="439.0" prefWidth="506.0">
+                     <content>
+                        <Pane prefHeight="432.0" prefWidth="503.0">
+                           <children>
+                              <Pane id="form_pane" layoutX="5.0" layoutY="9.0" prefHeight="417.0" prefWidth="491.0">
+                                 <children>
+                                    <Pane id="inside_pane" layoutX="8.0" layoutY="13.0" prefHeight="159.0" prefWidth="476.0">
+                                       <children>
+                                          <Label layoutX="6.0" layoutY="5.0" prefHeight="30.0" prefWidth="87.0" text="First Name" />
+                                          <TextField fx:id="fname" layoutX="10.0" layoutY="36.0" prefHeight="30.0" prefWidth="213.0" />
+                                          <Label layoutX="251.0" layoutY="4.0" prefHeight="30.0" prefWidth="89.0" text="Last Name" />
+                                          <TextField fx:id="lname" layoutX="251.0" layoutY="35.0" prefHeight="30.0" prefWidth="213.0" />
+                                          <Label layoutX="11.0" layoutY="78.0" prefHeight="30.0" prefWidth="55.0" text="Email" />
+                                          <TextField fx:id="email" layoutX="10.0" layoutY="108.0" prefHeight="30.0" prefWidth="452.0" />
+                                          <Label id="star" layoutX="84.0" layoutY="5.0" prefHeight="30.0" prefWidth="41.0" text="*" />
+                                          <Label id="star" layoutX="329.0" layoutY="4.0" prefHeight="30.0" prefWidth="41.0" text="*" />
+                                          <Label id="star" layoutX="59.0" layoutY="76.0" prefHeight="30.0" prefWidth="41.0" text="*" />
+                                       </children>
+                                    </Pane>
+                                    <Pane id="inside_pane" layoutX="7.0" layoutY="172.0" prefHeight="230.0" prefWidth="479.0">
+                                       <children>
+                                          <Label layoutX="13.0" layoutY="9.0" prefHeight="30.0" prefWidth="205.0" text="State" />
+                                          <ComboBox fx:id="state" layoutX="13.0" layoutY="41.0" prefHeight="30.0" prefWidth="204.0" />
+                                          <Label layoutX="240.0" layoutY="9.0" prefHeight="29.0" prefWidth="205.0" text="City" />
+                                          <TextField fx:id="city" layoutX="236.0" layoutY="41.0" prefHeight="30.0" prefWidth="219.0" />
+                                          <Label layoutX="13.0" layoutY="79.0" prefHeight="30.0" prefWidth="205.0" text="Address" />
+                                          <TextField fx:id="address" layoutX="9.0" layoutY="110.0" prefHeight="30.0" prefWidth="446.0" />
+                                          <Label layoutX="8.0" layoutY="148.0" prefHeight="30.0" prefWidth="214.0" text="Pincode" />
+                                          <TextField fx:id="pincode" layoutX="9.0" layoutY="180.0" prefHeight="30.0" prefWidth="213.0" />
+                                          <Label layoutX="240.0" layoutY="148.0" prefHeight="30.0" prefWidth="90.0" text="Contact No" />
+                                          <TextField fx:id="contact" layoutX="241.0" layoutY="180.0" prefHeight="30.0" prefWidth="218.0" />
+                                          <Label id="star" layoutX="323.0" layoutY="145.0" prefHeight="30.0" prefWidth="41.0" text="*" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </Pane>
+            <Button layoutX="14.0" layoutY="488.0" mnemonicParsing="false" onAction="#saveSupplier" prefHeight="29.0" prefWidth="99.0" text="Add" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
